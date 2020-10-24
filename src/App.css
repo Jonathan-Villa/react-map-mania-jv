@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+em{
+    font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+ 
+    letter-spacing: 1px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body{
+    background: #264653;
 }
 
-.App-link {
-  color: #61dafb;
+.main-header{
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sub-header{
+    text-align: center;
 }
+
+.info-window-heading{
+    text-align: center;
+}
+
+.hints-header{
+    text-align: center;
+    color: white;
+}
+
+/* map container */
+
+#map-container{
+    height: 100vh;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#map-form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 60%;
+    border-radius: 10px;
+    min-width: 670px;
+    background: white;
+}
+
+#google-map{
+    border-radius: 10px;
+    transition: 1s ease;
+}
+
+#google-map:hover{
+    transition: .3s ease-in-out;
+    transform: translateY(-15px);
+    box-shadow: 10px 12px 5px 6px rgba(0, 0, 0, 0.35);
+}
+
+.header-container{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hints-container{
+    width: 500px;
+}
+
+/* input container */
+#btn-container{
+    position: relative;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    top: 100px;
+    left: 530px;
+    bottom: 0;
+
+}
+
+#cheat-btn{
+    background-color: white;
+    border-radius: 2px;
+    width: 50px;
+    font-weight: bold;
+
+}
+
+#reset-btn{
+    margin-top: 1px;
+    background-color: white;
+    border-radius: 2px;
+    width: 50px;
+    font-weight: bold;
+}
+
+
