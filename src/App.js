@@ -13,7 +13,7 @@ import { cordinates } from "./components/favoriteplaces";
 import Infowindow from "./components/infowindow";
 import Hints from "./components/hintsdropdown";
 
-const apiKey = "AIzaSyCdnUr2jm0d1m07Awac2ZgHH66ekKT21oQ";
+const apiKey = {"PASTE YOUR API KEY"};
 
 function App() {
   const [score, setScore] = useState(0);
