@@ -12,8 +12,9 @@ import * as M from "@material-ui/core";
 import { cordinates } from "./components/favoriteplaces";
 import Infowindow from "./components/infowindow";
 import Hints from "./components/hintsdropdown";
+import "dotenv"
 
-const apiKey = "AIzaSyCdnUr2jm0d1m07Awac2ZgHH66ekKT21oQ";
+const apiKey = process.env.GOOGLE_API_KEY 
 
 function App() {
   const [score, setScore] = useState(0);
@@ -104,7 +105,7 @@ function App() {
     <LoadScript googleMapsApiKey={apiKey}>
       <M.Container maxWidth="x-lg" id="map-container">
         <Hints />
-        <M.FormControl id="map-form">
+        <div className="map-inner-Container">
           <div className="header-container">
             {inBounds ? (
               <h1>You are close by!</h1>
@@ -169,7 +170,7 @@ function App() {
             <PersonalInfoWindow />
             <Infowindow />
           </GoogleMap>
-        </M.FormControl>
+        </div>
       </M.Container>
     </LoadScript>
   );

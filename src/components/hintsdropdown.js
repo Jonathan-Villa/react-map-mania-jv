@@ -49,13 +49,12 @@ function Hintsdropdown() {
 
   return (
     <div className="hints-container">
-      <h1 className="hints-header">Hints</h1>
       {hints.map((index, id) => (
         <M.Accordion>
           <M.AccordionSummary
             expandIcon={<MdArrowDropDown />}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
+            aria-controls="panel-content"
+            id="panel-header"
           >
             {index.hint}
           </M.AccordionSummary>
